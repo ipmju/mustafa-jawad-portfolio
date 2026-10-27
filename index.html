@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO (populated/kept in sync by app.js per language) -->
+  <title>Mustafa Jawad — Programmer</title>
+  <meta name="description" content="Mustafa Jawad is a programmer at Cloud Group building thoughtful digital solutions and meaningful experiences through technology." />
+  <meta name="author" content="Mustafa Jawad" />
+  <meta name="theme-color" content="#06070a" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mustafa Jawad — Programmer" />
+  <meta property="og:description" content="Building thoughtful digital solutions and meaningful experiences through technology." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Text-based brand favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306070a'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' font-size='30' fill='%234f8cff'%3EMJ%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip" data-i18n="skip">Skip to content</a>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#home" class="wordmark" aria-label="Mustafa Jawad — home">
+        <span class="name">MUSTAFA <b>JAWAD</b></span>
+        <span class="role" data-i18n="brand.role">Programmer · Cloud Group</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary"></nav>
+
+      <div class="nav-right">
+        <button class="lang-btn" id="langBtn" data-i18n="lang.switch"
+                data-i18n-aria="lang.label" aria-label="Switch language">عربي</button>
+        <a href="#contact" class="btn btn-primary nav-cta" data-i18n="nav.cta">Get in Touch</a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile menu -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile"></nav>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero section" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <span class="hero-identity reveal"><span class="dot"></span><span data-i18n="hero.identity">Programmer · Cloud Group</span></span>
+          <h1 class="hero-title reveal d1"><span class="grad" data-i18n="hero.title">Turning Ideas Into Digital Solutions.</span></h1>
+          <p class="hero-copy reveal d2" data-i18n="hero.copy"></p>
+          <div class="hero-actions reveal d3">
+            <a href="#projects" class="btn btn-primary"><span data-i18n="hero.cta1">Explore My Work</span><span class="arrow">→</span></a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-canvas-wrap reveal d2">
+          <canvas id="scene" aria-hidden="true"></canvas>
+          <div class="scene-fallback" id="sceneFallback" aria-hidden="true">
+            <svg viewBox="0 0 200 200" fill="none" stroke="#4f8cff" stroke-width="1.2">
+              <polygon points="100,20 170,60 170,140 100,180 30,140 30,60" opacity="0.5"/>
+              <polygon points="100,55 140,78 140,122 100,145 60,122 60,78" opacity="0.8"/>
+              <line x1="100" y1="20" x2="100" y2="55"/><line x1="170" y1="60" x2="140" y2="78"/>
+              <line x1="170" y1="140" x2="140" y2="122"/><line x1="100" y1="180" x2="100" y2="145"/>
+              <line x1="30" y1="140" x2="60" y2="122"/><line x1="30" y1="60" x2="60" y2="78"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-ind" aria-hidden="true">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <span class="track"></span>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="about-head reveal">
+          <span class="eyebrow" data-i18n="about.eyebrow">About</span>
+          <h2 class="section-title" data-i18n="about.title"></h2>
+        </div>
+        <div class="about-body">
+          <p class="reveal" data-i18n="about.p1"></p>
+          <p class="reveal d1" data-i18n="about.p2"></p>
+          <div class="about-kpis">
+            <div class="kpi reveal"><div class="t" data-i18n="about.k1"></div><div class="d" data-i18n="about.k1d"></div></div>
+            <div class="kpi reveal d1"><div class="t" data-i18n="about.k2"></div><div class="d" data-i18n="about.k2d"></div></div>
+            <div class="kpi reveal d2"><div class="t" data-i18n="about.k3"></div><div class="d" data-i18n="about.k3d"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERTISE ===================== -->
+    <section class="section" id="expertise">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="exp.eyebrow">Expertise</span>
+          <h2 class="section-title" data-i18n="exp.title"></h2>
+          <p class="section-note" data-i18n="exp.note"></p>
+        </div>
+        <div class="exp-list" id="expList"></div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="proj.eyebrow">Projects</span>
+          <h2 class="section-title" data-i18n="proj.title"></h2>
+        </div>
+        <div id="projectList"></div>
+      </div>
+    </section>
+
+    <!-- ===================== APPROACH ===================== -->
+    <section class="section" id="approach">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="appr.eyebrow">Approach</span>
+          <h2 class="section-title" data-i18n="appr.title"></h2>
+          <p class="section-note" data-i18n="appr.note"></p>
+        </div>
+        <div class="appr-steps" id="apprSteps"></div>
+      </div>
+    </section>
+
+    <!-- ===================== CLOUD GROUP ===================== -->
+    <section class="section" id="cloud">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="cloud.eyebrow">Organization</span>
+        </div>
+        <div class="cloud-card reveal d1">
+          <div>
+            <h2 class="section-title" data-i18n="cloud.title"></h2>
+            <p class="copy" data-i18n="cloud.copy"></p>
+            <a class="btn btn-ghost" id="cloudLink" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="cloud.visit">Visit Cloud Group</span><span class="arrow">↗</span>
+            </a>
+          </div>
+          <div class="wordmark" style="font-size:1.4rem;align-items:center;text-align:center">
+            <span class="name" style="font-size:1.1rem;letter-spacing:0.14em">CLOUD <b>GROUP</b></span>
+            <span class="role">cdiraq.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <span class="eyebrow reveal" data-i18n="contact.eyebrow">Contact</span>
+        <div class="contact-grid">
+          <div class="reveal">
+            <h2 class="contact-title" data-i18n="contact.title"></h2>
+            <p class="contact-copy" data-i18n="contact.copy"></p>
+            <div class="contact-direct">
+              <span class="label" data-i18n="contact.or">Or reach me directly</span>
+              <div class="social-row" id="socialRow"></div>
+            </div>
+          </div>
+
+          <form class="reveal d1" id="contactForm" novalidate>
+            <div class="form-note" id="formNote">
+              <span class="pill" data-i18n="contact.soon">Not configured yet</span>
+              <span data-i18n="contact.formNote"></span>
+            </div>
+            <div class="field">
+              <label for="cName" data-i18n="contact.name">Name</label>
+              <input id="cName" name="name" type="text" autocomplete="name" required />
+              <span class="err" data-err="name"></span>
+            </div>
+            <div class="field">
+              <label for="cEmail" data-i18n="contact.email">Email</label>
+              <input id="cEmail" name="email" type="email" autocomplete="email" required />
+              <span class="err" data-err="email"></span>
+            </div>
+            <div class="field">
+              <label for="cMsg" data-i18n="contact.message">Message</label>
+              <textarea id="cMsg" name="message" required></textarea>
+              <span class="err" data-err="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Mustafa Jawad — <span data-i18n="footer.rights">Personal portfolio.</span></span>
+      <span data-i18n="footer.built">Built with care.</span>
+    </div>
+  </footer>
+
+  <!-- Scripts: content model, then 3D scene (deferred/lazy), then app logic -->
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/scene.js" defer></script>
+</body>
+</html>
